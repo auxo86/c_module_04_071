@@ -1,0 +1,58 @@
+﻿@model module_04_071.Comment
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div>
+        <h4>Comment</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.subject)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.subject)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HtmlComment)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HtmlComment)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IsApprove)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IsApprove)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
