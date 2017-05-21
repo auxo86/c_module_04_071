@@ -13,5 +13,11 @@ namespace module_04_071.Controllers
         {
             return View();
         }
+
+        public ActionResult Index2()
+        {
+            return View();
+        }
+
     }
 }
